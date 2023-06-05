@@ -1,0 +1,23 @@
+{
+    "games": [
+      {
+        "name": "Midnight Ghost Hunt",
+        "store": "Epic Games",
+        "duration": "now till 6/8/2023 at 3:00 PM",
+        "url": "https://launcher.store.epicgames.com/en-US/p/midnight-ghost-hunt"
+      },
+      {
+        "name": "The Sims™ 4",
+        "store": "Epic Games",
+        "duration": "-",
+        "url": "https://launcher.store.epicgames.com/en-US/p/the-sims-4"
+      },
+      {
+        "name": "Brawlhalla",
+        "store": "Epic Games",
+        "duration": "-",
+        "url":"https://launcher.store.epicgames.com/en-US/p/brawlhalla"
+      }
+    ]
+  }
+  
