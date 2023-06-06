@@ -1,31 +1,19 @@
 # -*- coding: utf-8 -*-
-
-import telegram
-from telegram.ext import CommandHandler, Updater
-import json
-import os
-from dotenv import load_dotenv
-from telegram import ParseMode
-
-
-load_dotenv()
-
-
-TOKEN = os.getenv("TOKEN")
-
-
-import telegram
+from telegram import Bot,ParseMode
 from telegram.ext import CommandHandler, Updater
 from bs4 import BeautifulSoup
 import json
 import os
 from dotenv import load_dotenv
 
-
 load_dotenv()
 
 
 TOKEN = os.getenv("TOKEN")
+RENDER_URL =os.getenv("RENDER_URL")
+
+bot = Bot(token=TOKEN)
+bot.set_webhook(RENDER_URL)
 
 
 def startMessage(update,context):
