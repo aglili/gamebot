@@ -16,7 +16,7 @@ requests==2.31.0
 six==1.16.0
 sniffio==1.3.0
 soupsieve==2.4.1
-tornado==6.3.2
+tornado
 tzdata==2023.3
 tzlocal==5.0.1
 urllib3==2.0.2
