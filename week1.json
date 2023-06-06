@@ -29,7 +29,20 @@
         "store": "Steam",
         "duration":"-",
         "url":"https://store.steampowered.com/app/230410/Warframe/"
+      },
+      {
+        "name": "Their Land",
+        "store": "Steam",
+        "duration":"-",
+        "url":"https://store.steampowered.com/app/2430990/Their_Land/"
+      },
+      {
+        "name":"Tell Me Why",
+        "store":"Steam",
+        "duration":"1st - 31st June",
+        "url":"https://store.steampowered.com/app/1180660/Tell_Me_Why/"
       }
+      
 
     ]
   }
