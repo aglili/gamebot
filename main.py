@@ -65,7 +65,7 @@ def main():
     dispatcher.add_handler(start_handler)
 
     # Start the bot
-    updater.start_webhook(listen="0.0.0.0", port=int(os.environ.get("PORT", 5000)), url_path=TOKEN)
+    updater.start_webhook(listen="0.0.0.0", port=int(os.environ.get("PORT", 80)), url_path=TOKEN)
     updater.bot.set_webhook(RENDER_URL + TOKEN)
     updater.idle()
 
