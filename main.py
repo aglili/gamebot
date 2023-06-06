@@ -9,7 +9,6 @@ load_dotenv()
 
 TOKEN = os.getenv("TOKEN")
 RENDER_URL = os.getenv("RENDER_URL")
-
 DEPLOY_HOOK = os.getenv("DEPLOY_HOOK")
 
 bot = Bot(token=TOKEN)
