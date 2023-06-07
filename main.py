@@ -54,6 +54,29 @@ def fetchGames(update, context):
     context.bot.send_message(chat_id=chat_id, text="\n\n".join(messages))
 
 
+def fetchDeals(update, context):
+    file_path = "deal1.json"
+
+    with open(file_path, "r") as file:
+        json_data = json.load(file)
+
+    games = json_data["deals"]
+    messages = []
+
+    for game in games:
+        name = game["name"]
+        store = game["store"]
+        duration = game["duration"]
+        price_changes = game["was-now"]
+        url = game["url"]
+
+        message = f"Name: {name}\nStore: {store}\nPriceChanges{price_changes}\nDuration: {duration}\nURL: {url}"
+        messages.append(message)
+
+    chat_id = update.effective_chat.id
+    context.bot.send_message(chat_id=chat_id, text="\n\n".join(messages))
+
+
 def main():
     # Set up the bot
     updater = Updater(token=TOKEN, use_context=True)
@@ -62,8 +85,10 @@ def main():
     # Register the command handlers
     new_handler = CommandHandler('new', fetchGames)
     start_handler = CommandHandler('start', startMessage)
+    deal_handler = CommandHandler('deal',fetchDeals)
     dispatcher.add_handler(new_handler)
     dispatcher.add_handler(start_handler)
+    dispatcher.add_handler(deal_handler)
 
     # Start the bot
     updater.start_webhook(listen="0.0.0.0", port=80, url_path=TOKEN,webhook_url = f"{RENDER_URL}/{TOKEN}")
