@@ -70,7 +70,7 @@ def fetchDeals(update, context):
         price_changes = game["was-now"]
         url = game["url"]
 
-        message = f"Name: {name}\nStore: {store}\nPriceChanges{price_changes}\nDuration: {duration}\nURL: {url}"
+        message = f"Name: {name}\nStore: {store}\nPriceChanges: {price_changes}\nDuration: {duration}\nURL: {url}"
         messages.append(message)
 
     chat_id = update.effective_chat.id
