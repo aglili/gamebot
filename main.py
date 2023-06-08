@@ -79,34 +79,6 @@ def fetchDeals(update, context):
     context.bot.send_message(chat_id=chat_id, text="\n\n".join(messages))
 
 
-def searchGames(update, context):
-    query = " ".join(context.args)
-    if not query:
-        context.bot.send_message(chat_id=update.effective_chat.id, text="Please Enter A Game")
-        return
-    
-    search_url = f"https://www.g2a.com/search?query={query}"
-
-    response = requests.get(search_url)
-
-    soup = BeautifulSoup(response.text, "html.parser")
-
-
-    game_items = soup.find_all("li", class_="sc-eGJWMs")
-    messages = []
-
-    for item in game_items:
-        id = item.find('li')["id"]
-        title = item.find("h3", class_="sc-iqAclL").get_text(strip=True).replace("(", "").replace(")", "")
-        price = item.find("span", class_="sc-iqAclL").get_text(strip=True)
-        image_url = item.find("img")["src"]
-        game_slug = title.lower().replace(" ", "-")
-        game_url = f"https://www.g2a.com/{game_slug}-i{id}"
-
-        message = f"Title: {title}\nPrice: {price}\nImage: {image_url}\nLink: {game_url}"
-        messages.append(message)
-
-    context.bot.send_message(chat_id=update.effective_chat.id, text="\n\n".join(messages))
 
 
 
@@ -123,12 +95,9 @@ def main():
     new_handler = CommandHandler('new', fetchGames)
     start_handler = CommandHandler('start', startMessage)
     deal_handler = CommandHandler('deal',fetchDeals)
-    search_handler = CommandHandler("search",searchGames)
     dispatcher.add_handler(new_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(deal_handler)
-    dispatcher.add_handler(search_handler)
-
     # Start the bot
     updater.start_webhook(listen="0.0.0.0", port=80, url_path=TOKEN,webhook_url = f"{RENDER_URL}/{TOKEN}")
     updater.idle()
