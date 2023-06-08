@@ -1,0 +1,45 @@
+{
+    "deals":[
+        {
+            "name":"God of War Ragnarök",
+            "was-now":"69.99 - $49.69 ",
+            "platform":"Playstation Store",
+            "supported":"ps4 and ps5",
+            "duration":"till 13th June",
+            "url":"https://store.playstation.com/en-us/product/UP9000-PPSA08329_00-GOWRAGNAROK00000"
+        },
+        {
+            "name":"Gran Turismo® 7",
+            "was-now":"69.99 - $39.89",
+            "platform":"Playstation Store",
+            "supported":"ps4 and ps5",
+            "duration":"till 13th June",
+            "url":"https://store.playstation.com/en-us/product/UP9000-PPSA01317_00-GT7STD0000000PS5"
+        },
+        {
+            "name":"NBA 2K23 Digital Deluxe Edition",
+            "was-now":"79.99 - $11.99",
+            "platform":"Playstation Store",
+            "supported":"ps4 and ps5",
+            "duration":"till 13th June",
+            "url":"https://store.playstation.com/en-us/product/UP1001-PPSA07169_00-NBA2K23DIGTLDLXE"
+        },
+        {
+            "name":"Assassin's Creed Valhalla Deluxe",
+            "was-now":"79.99 - $19.99",
+            "platform":"Playstation Store",
+            "supported":"ps4 and ps5",
+            "duration":"till 13th June",
+            "url":"https://store.playstation.com/en-us/product/UP0001-PPSA01491_00-EDITIONDELUXE000"
+        },
+        {
+            "name":"Forspoken Digital Deluxe",
+            "was-now":"25.00 - $12.50",
+            "platform":"Playstation Store",
+            "supported":"ps5",
+            "duration":"till 13th June",
+            "url":"https://store.playstation.com/en-us/product/UP0082-PPSA03982_00-9744752114489886"
+        }
+
+    ]
+}
