@@ -1,0 +1,49 @@
+{
+    "games": [
+      {
+        "name": "Midnight Ghost Hunt",
+        "store": "Epic Games",
+        "duration": "now till 6/8/2023 at 3:00 PM",
+        "url": "https://launcher.store.epicgames.com/en-US/p/midnight-ghost-hunt"
+      },
+      {
+        "name": "The Sims\u2122 4",
+        "store": "Epic Games",
+        "duration": "-",
+        "url": "https://launcher.store.epicgames.com/en-US/p/the-sims-4"
+      },
+      {
+        "name": "Brawlhalla",
+        "store": "Epic Games",
+        "duration": "-",
+        "url":"https://launcher.store.epicgames.com/en-US/p/brawlhalla"
+      },
+      {
+        "name": "eFootball\u2122 2023",
+        "store": "Steam",
+        "duration": "-",
+        "url":"https://store.steampowered.com/app/1665460/eFootball_2023/"
+      },
+      {
+        "name": "Warframe",
+        "store": "Steam",
+        "duration":"-",
+        "url":"https://store.steampowered.com/app/230410/Warframe/"
+      },
+      {
+        "name": "Their Land",
+        "store": "Steam",
+        "duration":"-",
+        "url":"https://store.steampowered.com/app/2430990/Their_Land/"
+      },
+      {
+        "name":"Tell Me Why",
+        "store":"Steam",
+        "duration":"1st - 31st June",
+        "url":"https://store.steampowered.com/app/1180660/Tell_Me_Why/"
+      }
+      
+
+    ]
+  }
+  
